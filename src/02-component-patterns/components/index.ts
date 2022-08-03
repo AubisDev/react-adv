@@ -3,7 +3,7 @@ import {ProductCard as ProductCardHOC} from './ProductCard';
 import { ProductButtons } from './ProductButtons';
 import { ProductTitle } from './ProductTitle';
 import {ProductImage} from './ProductImage';
-import { ProductCardHOCProps } from '../interfaces/interfaces';
+import { ProductCartHOCProps } from '../interfaces/interfaces';
 
 export { ProductButtons } from './ProductButtons';
 export { ProductTitle } from './ProductTitle';
@@ -20,7 +20,7 @@ export {ProductImage} from './ProductImage';
         <ProductCard.Buttons  />
       </ProductCard> */}
 
-export const ProductCard: ProductCardHOCProps = Object.assign( ProductCardHOC, {
+export const ProductCard: ProductCartHOCProps = Object.assign( ProductCardHOC, {
   Title: ProductTitle,
   Image: ProductImage,
   Buttons: ProductButtons
